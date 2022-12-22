@@ -41,13 +41,14 @@ class Test extends React.Component {
 		console.log('render before return');
 		return (
 			<>
+				<h1>Check console log</h1>
 				<div>
 					{console.log('render after return')}
-					<div>
+					<div className="test">
 						<button onClick={this.buttonHandler}>Push</button>
 						<button onClick={this.props.deleteComp}>delete me</button>
+						<div>{this.state.stateOne}</div>
 					</div>
-					<div>{this.state.stateOne}</div>
 				</div>
 			</>
 		);
