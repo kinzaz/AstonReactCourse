@@ -1,13 +1,13 @@
 import React from 'react';
-import Test from './component/Test';
+import NameForm from './component/NameForm';
+import List from './component/List';
 
 const App = () => {
-	const [isDeleted, setDeleted] = React.useState(false);
-
-	const deleteComp = () => {
-		setDeleted(true);
-	};
-
-	return <>{!isDeleted ? <Test arg={1} deleteComp={deleteComp} /> : null}</>;
+	return (
+		<>
+			<NameForm />
+			<List />
+		</>
+	);
 };
 export default App;
